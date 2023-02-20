@@ -1,0 +1,977 @@
+body {
+  margin-top: 20px;
+  background: #000000;
+}
+
+.ui-w-40 {
+  width: 40px !important;
+  height: auto;
+}
+
+.card {
+  box-shadow: 0 1px 15px 1px rgba(52, 40, 104, .08);
+}
+
+.ui-product-color {
+  display: inline-block;
+  overflow: hidden;
+  margin: .144em;
+  width: .875rem;
+  height: .875rem;
+  border-radius: 10rem;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  background: #ffae00;
+  transition: 1s;
+  box-shadow: 6px 6px 0 rgb(0, 0, 0);
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #00ff0d;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+span {
+  transform: skewX(15deg)
+}
+
+span:nth-child(2) {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #000000;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  text-align: center;
+  background-color: #ffcc8e;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.button a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFA12B;
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active {
+  top: 10px;
+  background-color: #F78900;
+
+  -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+body {
+  font: 100% Roboto, sans-serif;
+  background: black;
+  background-size: cover;
+  padding: 50px;
+  margin: 0;
+}
+
+nav {
+  width: 300px;
+  background: white;
+  color: rgba(255, 225, 0, 0.87);
+  -webkit-clip-path: circle(24px at 30px 24px);
+  clip-path: circle(24px at 32px 24px);
+  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+}
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 225px 24px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+a {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a:hover {
+  background: transparent
+}
+
+a:active {
+  background: transparent
+}
+
+.navicon {
+  padding: 23px 20px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+}
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: rgba(255, 255, 0, 0.87);
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgba(255, 247, 0, 0.87);
+  position: absolute;
+}
+
+.navicon div:before {
+  top: -7px;
+}
+
+.navicon div:after {
+  top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+
+.store-container {
+  line-height: 0;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.stroke {
+  stroke: #000000;
+  stroke-width: 5;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.round-end {
+  stroke-linecap: round;
+}
+
+#store {
+  animation: fadeIn 0.8s ease-in;
+}
+
+.border-animation {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  position: relative;
+}
+
+.border-animation:after {
+  content: "";
+  background: linear-gradient(45deg, #fffb00 48.9%, #ffb700 49%);
+  background-size: 300% 300%;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  z-index: -1;
+  animation: borderGradient 8s linear both infinite;
+}
+
+@keyframes borderGradient {
+
+  0%,
+  100% {
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#browser {
+  transform: translateY(-100%);
+  -webkit-animation: moveDown 1.5s cubic-bezier(0.77, -0.5, 0.3, 1.5) forwards;
+  animation: moveDown 1.5s cubic-bezier(0.77, -0.5, 0.3, 1.5) forwards;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translate(0, -100%);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+#toldo {
+  animation: fadeIn 1s 1.4s ease-in forwards;
+}
+
+.grass {
+  animation: fadeIn 0.5s 1.6s ease-in forwards;
+}
+
+#window {
+  animation: fadeIn 0.5s 1.8s ease-in forwards;
+}
+
+#door {
+  animation: fadeIn 0.5s 2s ease-in forwards;
+}
+
+#sign {
+  transform-origin: 837px 597px;
+  animation: pendulum 1.5s 2s ease-in-out alternate;
+}
+
+.trees {
+  animation: fadeIn 0.5s 2.2s ease-in forwards;
+}
+
+#toldo,
+.grass,
+#window,
+#door,
+.trees,
+.cat,
+.cat-shadow,
+.box,
+.parachute,
+.tshirt,
+.cap,
+.ball,
+#text,
+#button,
+.sky-circle,
+.sky-circle2,
+.sky-circle3 {
+  opacity: 0;
+}
+
+@keyframes pendulum {
+  20% {
+    transform: rotate(60deg);
+  }
+
+  40% {
+    transform: rotate(-40deg);
+  }
+
+  60% {
+    transform: rotate(20deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
+.cat {
+  transform-origin: 1145px 620px;
+}
+
+.cat-shadow {
+  transform-origin: 1115px 625px;
+}
+
+#store:hover .cat {
+  animation: catHi 3s 3s cubic-bezier(0.7, -0.5, 0.3, 1.4);
+}
+
+#store:hover .cat-shadow {
+  animation: catShadow 4s 2s cubic-bezier(0.7, -0.5, 0.3, 1.4) alternate;
+}
+
+@keyframes catHi {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  10%,
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes catShadow {
+
+  0%,
+  100% {
+    transform: translate(40px, -35px) scale(0.3);
+  }
+
+  10%,
+  60% {
+    opacity: 1;
+    transform: translate(-5px, 10px) scale(0.5);
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
+
+.box,
+.parachute {
+  transform-origin: 430px 100px;
+  animation: moveBox 14s 4s linear forwards infinite;
+}
+
+.parachute {
+  animation: parachute 14s 4s linear forwards infinite;
+}
+
+@keyframes moveBox {
+  0% {
+    opacity: 0;
+    transform: translate(0, -150px) rotate(20deg);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translate(0, 100px) rotate(-15deg);
+  }
+
+  25% {
+    transform: translate(0, 250px) rotate(10deg);
+  }
+
+  30% {
+    transform: translate(0, 350px) rotate(-5deg);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translate(0, 570px) rotate(0deg);
+  }
+
+  45%,
+  100% {
+    opacity: 0;
+    transform: translate(0, 570px);
+  }
+}
+
+@keyframes parachute {
+  0% {
+    transform: translate(0, -150px) rotate(20deg) scale(0.8);
+    opacity: 0;
+  }
+
+  15% {
+    transform: translate(0, 100px) rotate(-15deg) scale(1);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate(0, 250px) rotate(10deg);
+  }
+
+  30% {
+    transform: translate(0, 350px) rotate(-5deg);
+  }
+
+  33% {
+    transform: translate(0, 460px) rotate(0deg) scale(0.9);
+    opacity: 1;
+  }
+
+  45%,
+  100% {
+    transform: translate(0, 480px);
+    opacity: 0;
+  }
+}
+
+.tshirt {
+  animation: fadeInOut 42s 10s ease-in forwards infinite;
+}
+
+.cap {
+  animation: fadeInOut 42s 24s ease-in forwards infinite;
+}
+
+.ball {
+  animation: fadeInOut 42s 38s ease-in forwards infinite;
+}
+
+#text,
+#button {
+  animation: fadeIn 1s 5s ease-in forwards;
+}
+
+@keyframes fadeInOut {
+
+  5%,
+  12% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+}
+
+.cloud {
+  animation: clouds 50s linear backwards infinite;
+}
+
+.cloud2 {
+  animation: clouds 40s 40s linear backwards infinite;
+}
+
+.plane {
+  animation: clouds 30s linear backwards infinite;
+  will-change: transform;
+}
+
+@keyframes clouds {
+  from {
+    transform: translate(-150%, 0);
+  }
+
+  to {
+    transform: translate(150%, 0);
+  }
+}
+
+.sky-circle {
+  animation: fadeInOut 10s 5s ease-in infinite;
+}
+
+.sky-circle2 {
+  animation: fadeInOut 12s 30s ease-in infinite;
+}
+
+.sky-circle3 {
+  animation: fadeInOut 8s 40s ease-in infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #eee
+}
+
+.card {
+  border: none;
+  position: relative
+}
+
+.off {
+  font-size: 60px;
+  margin-top: -16px !important;
+  color: blue
+}
+
+.flat {
+  font-size: 20px
+}
+
+.star {
+  margin-top: 25px !important;
+  font-size: 28px
+}
+
+.line {
+  padding-right: 8rem !important;
+  padding-left: 8rem !important
+}
+
+.line hr {
+  height: 2px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.css-typing p {
+  border-right: .15em solid orange;
+  font-family: "Courier";
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 7.3em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 11.5em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  width: 70.3em;
+  opacity: 0;
+  -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

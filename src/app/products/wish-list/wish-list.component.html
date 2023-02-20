@@ -1,0 +1,85 @@
+<!--empty wishlist-->
+<div *ngIf="wishlistStatusMsg" id="wrapper" class="bg-dark">
+    <a routerLink="/products/all-products" class="my-super-cool-btn">
+        <div class="dots-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <span>ADD</span>
+    </a>
+</div>
+
+<!-- wishlist-->
+<section *ngIf="!wishlistStatusMsg" class="py-5 bg-dark">
+    <div class="container px-1 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-9 p-6 bg-transparent mt-5" *ngFor="let product of wishlist">
+                <div class="card h-100 p-6 bg-transparent shrink">
+                    <!-- Product image-->
+                    <img class="card-img-top p-6 bg-black mb-9 shrink" [src]="product.image" alt="..." height="300px"
+                        width="200px" />
+                    <!-- Product details-->
+                    <div class="card-body p-4 bg-black">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <br>
+                            <h5 class="fw-bolder text-white">{{product.title}}</h5>
+                            <br>
+                            <!-- Product price-->
+                            ${{product.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-black">
+                        <div (click)="removeItem(product.id)" class="trash-box text-start">
+                            <div class="trash"></div>
+                            <div class="trash-top"></div>
+                            <div class="trash-btm">
+                                <div class="trash-lines">
+                                    <div class="trash-line"></div>
+                                    <div class="trash-line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section (click)="addToCart(product)" class="text-end black">
+                            <a  data-item="+">
+                                <svg viewBox="0 0 32 32">
+                                    <g data-name="Layer 2" id="Layer_2">
+                                        <path
+                                            d="M24.33,23H13.53a3,3,0,0,1-2.9-2.21L8,11.26a1,1,0,0,1,.17-.87A1,1,0,0,1,9,10H28a1,1,0,0,1,.77.36,1,1,0,0,1,.21.82l-1.7,9.36A3,3,0,0,1,24.33,23Zm-14-11,2.25,8.26a1,1,0,0,0,1,.74h10.8a1,1,0,0,0,1-.82L26.8,12Z" />
+                                        <path
+                                            d="M9,12a1,1,0,0,1-1-.73L6.45,5.73a1,1,0,0,0-1-.73H4A1,1,0,0,1,4,3H5.49A3,3,0,0,1,8.38,5.18L10,10.73A1,1,0,0,1,9.27,12,.84.84,0,0,1,9,12Z" />
+                                        <path
+                                            d="M16,29a2,2,0,1,1,2-2A2,2,0,0,1,16,29Zm0-2h0Zm0,0h0Zm0,0h0Zm0,0h0Zm0,0h0Zm0,0h0Zm0,0h0Zm0,0h0Z" />
+                                        <path d="M22,29a2,2,0,1,1,2-2A2,2,0,0,1,22,29Zm0-2Z" />
+                                        <path d="M22,17H16a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Z" />
+                                    </g>
+                                    <g id="frame">
+                                        <rect fill="none" height="32" width="32" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </section>
+                        <br>
+                        <div class="rate text-start black">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

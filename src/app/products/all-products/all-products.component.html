@@ -1,0 +1,188 @@
+<!-- Header-->
+<header class="bg-dark py-5">
+    <h1 routerLink="/products/all-products" class="fw-bold">T r e n d i n g</h1>
+
+    <div class="container  bg-transparent">
+        <div class="text-center text-white bg-transparent">
+            <div class="card-group bg-transparent">
+                <div class="card bg-transparent">
+                    <div class="component bg-transparent">
+                        <ul class="align bg-transparent">
+                            <li>
+                                <figure class='book bg-transparent'>
+                                    <!-- Front -->
+                                    <ul class='hardcover_front bg-transparent'>
+                                        <img class="color" height="220px" width="190px"
+                                            src="https://m.media-amazon.com/images/I/A12tbaSby+L.jpg">
+                                    </ul>
+
+                                    <!-- Pages -->
+                                    <ul class='page bg-transparent'>
+                                        <li></li>
+                                        <li class="color">
+                                            <img class="color"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgAEvjL2M3doIeaLWcD80Jqtt7i1yr9PfwEq8mbrqWI4Pofb2hafn-cYs4mTVNneDPrk&usqp=CAU"
+                                                height="200px" width="160px">
+                                        </li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+
+                                    <!-- Back -->
+
+                                    <ul class='hardcover_back bg-transparent'>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <ul class='book_spine bg-transparent'>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <figcaption class="text-white">
+                                        <h2>A Game of Thrones</h2>
+                                        <span class="text-white">By George R. R. Martin</span>
+                                        <p class="text-white">Genre : Epic fantasy
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-transparent">
+
+                    <div class="component bg-transparent">
+                        <ul class="align bg-transparent">
+                            <li>
+                                <figure class='book bg-transparent'>
+
+                                    <!-- Front -->
+
+                                    <ul class='hardcover_front bg-transparent'>
+                                        <img height="220px" width="190px"
+                                            src="https://m.media-amazon.com/images/I/51StPSSsneL.jpg">
+                                    </ul>
+
+                                    <!-- Pages -->
+
+                                    <ul class='page bg-transparent'>
+                                        <li></li>
+                                        <li>
+                                            <img src="https://m.media-amazon.com/images/I/81+9JUJQjAL._AC_UF1000,1000_QL80_.jpg"
+                                                height="200px" width="160px">
+                                        </li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+
+                                    <!-- Back -->
+
+                                    <ul class='hardcover_back bg-transparent'>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <ul class='book_spine bg-transparent'>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <figcaption class="text-white">
+                                        <h2>
+                                            Harry Potter</h2>
+                                        <span class="text-white">By J. K. Rowling</span>
+                                        <p class="text-white">Genre : Fantasy</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-transparent">
+
+                    <div class="component bg-transparent">
+                        <ul class="align bg-transparent">
+                            <li>
+                                <figure class='book bg-transparent'>
+
+                                    <!-- Front -->
+
+                                    <ul class='hardcover_front bg-transparent'>
+                                        <img height="220px" width="190px"
+                                            src="https://www.holybooks.com/wp-content/uploads/Downnload-the-Bible-PDF-King-James-Version1.jpg">
+                                    </ul>
+
+                                    <!-- Pages -->
+
+                                    <ul class='page bg-transparent'>
+                                        <li></li>
+                                        <li>
+                                            <img src="https://www.gla.ac.uk/myglasgow/library/files/special/images/exhibitions/month/dpb4/genesistp2.jpg"
+                                                height="210px" width="160px">
+                                        </li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+
+                                    <!-- Back -->
+
+                                    <ul class='hardcover_back bg-transparent'>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <ul class='book_spine bg-transparent'>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <figcaption class="text-white">
+                                        <h2>Bible</h2>
+                                        <span class="text-white">By Peter the apostle...</span>
+                                        <p class="text-white">Genres : ReligiousText,Prophecy</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Section-->
+
+<section class="py-5 bg-dark">
+    <h1 class="text-center fw-bold">A v a i l a b l e</h1>
+    <div class="container px-4 px-lg-5 mt-5 bg-transparent">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center bg-transparent">
+            <div class="col mb-5 bg-transparent color grow"
+                *ngFor="let product of products | filter:searchItem:'title'">
+                <div class="card h-100 p-2 bg-transparent">
+                    <!-- Product image-->
+                    <img height="300px" width="0px" class="card-img-top bg-transparent" [src]="product.image"
+                        [alt]="product.title" />
+                    <!-- Product details-->
+                    <div class="card-body p-4 bg-transparent">
+                        <div class="text-center bg-transparent text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder text-white bg-transparent">{{ product.title.slice(0,17)}}</h5>
+                            <h6 class="text-white bg-transparent">Genere : {{product.category}}</h6>
+                            <!-- Product price-->
+                            ${{product.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="bg-transparent"
+                                    routerLink="/products/view-product/{{product.id}}">
+                                    <h3 class="hover-2 text-white bg-transparent">More..</h3>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
