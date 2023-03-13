@@ -583,11 +583,11 @@ a:active {
 .box,
 .parachute {
   transform-origin: 430px 100px;
-  animation: moveBox 14s 4s linear forwards infinite;
+  animation: moveBox 8s 4s linear forwards infinite;
 }
 
 .parachute {
-  animation: parachute 14s 4s linear forwards infinite;
+  animation: parachute 8s 4s linear forwards infinite;
 }
 
 @keyframes moveBox {
@@ -682,15 +682,15 @@ a:active {
 }
 
 .cloud {
-  animation: clouds 50s linear backwards infinite;
+  animation: clouds 30s linear backwards infinite;
 }
 
 .cloud2 {
-  animation: clouds 40s 40s linear backwards infinite;
+  animation: clouds 20s 20s linear backwards infinite;
 }
 
 .plane {
-  animation: clouds 30s linear backwards infinite;
+  animation: clouds 14s linear backwards infinite;
   will-change: transform;
 }
 

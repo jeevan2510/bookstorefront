@@ -1,17 +1,19 @@
 <nav class="navbar bg-black sticky-top" data-bs-theme="dark">
-    
+
     <ul class="fw-bold">
         <li routerLink="">Home</li>
         <li routerLink="/products/all-products">Book Shelf</li>
         <div class="box">
             <form action="" name="search">
-                <input  (keyup)="search($event)" placeholder="Search Here" type="search" class="input" name="search"  pattern=".*\S.*" required >
+                <input (keyup)="search($event)" placeholder=" " type="search" class="input" name="search"
+                    pattern=".*\S.*" required>
             </form>
             <i class="fas fa-search"></i>
 
         </div>
         <li routerLink="/products/wishlist">Favorites</li>
-        <li routerLink="/products/Cart">Cart<span class="badge bg-blck text-white ms-1 rounded-pill text-info">{{cartItemCount}}</span></li>
+        <li routerLink="/products/Cart">Cart<span
+                class="badge bg-blck text-white ms-1 rounded-pill text-info">{{cartItemCount}}</span></li>
 
     </ul>
 </nav>
